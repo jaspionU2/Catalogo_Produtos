@@ -1,0 +1,88 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(35, 143, 146);
+}
+
+div.login-group {
+    background-color: rgba(26, 26, 232, 0.276);
+    border-radius: 10px;
+    border: double;
+    border-width: 4px;
+    border-color: yellow;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    height: 450px;
+    position: absolute;
+    width: 280px;
+
+    span#title-login {
+        background-color: cadetblue;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        margin: 15px;
+        padding: 4px;
+        gap: 7px;
+        margin-top: -30px;
+
+        i {
+            align-self: center;
+            color: white;
+            font-size: 5rem;
+        }
+
+        h4 {
+            margin: 0px;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 100;
+            font-size: 1.3rem;
+        }
+
+ 
+    }
+
+    form.forms-group {
+        background-color: aqua;
+        display: flex;
+        flex-flow: column wrap;
+        padding: 18px 9px 18px 9px;
+        gap: 20px;
+
+        span.user-group input,
+        span.password-group input  {
+            background-color: rgba(112, 182, 236, 0.813);
+            color: mintcream;
+            border: 1px solid rgb(27, 27, 27);
+            padding: 5px;
+            border-radius: 5px;
+            height: 15px;
+            width: 90%;
+        }
+
+        span.password-group {
+            position: relative;
+        }
+
+        span.password-group button {
+            position: absolute; /* Posiciona o botão dentro do contêiner */
+            top: 50%; /* Centraliza verticalmente */
+            right: 10px; /* Posiciona o botão à direita */
+            transform: translateY(-50%);
+            background-color: transparent;
+            border: none; 
+            color: inherit; 
+            cursor: pointer; 
+        }
+    }
+
+    
+
+}
